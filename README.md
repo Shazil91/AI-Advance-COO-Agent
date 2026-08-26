@@ -32,6 +32,9 @@ Current capabilities
 📰 Retrieve news
 🤖 Select and orchestrate tools using Gemini tool calling
 🔌 Extensible tool registry and executor architecture
+
+
+
 🏗️ Architecture
                          ┌──────────────────┐
                          │       User       │
@@ -100,7 +103,9 @@ User Request
      │
      ▼
  Final Response
-🧠 Why Gemini Tool Calling?
+
+
+ 🧠 Why Gemini Tool Calling?
 
 A traditional implementation could route every request using hard-coded conditions:
 
