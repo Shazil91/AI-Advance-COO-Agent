@@ -24,45 +24,10 @@ statements.
 
 ## Architecture
 
-``` text
-                         User
-                           |
-                           v
-                    +-------------+
-                    |   FastAPI   |
-                    |   main.py   |
-                    +------+------+
-                           |
-                           v
-                  +-------------------+
-                  |     COO Agent     |
-                  |  orchestrator/    |
-                  |     coo.py        |
-                  +---------+---------+
-                            |
-                            v
-                  +-------------------+
-                  |  Planner / Agent  |
-                  |  planner_agent.py |
-                  +---------+---------+
-                            |
-                     Gemini Tool Calling
-                            |
-          +-----------------+------------------+
-          |        |        |       |         |
-          v        v        v       v         v
-       Gmail   Calendar  Weather   News    Contacts
-        Tool      Tool     Tool    Tool      / DB
-          |        |        |       |
-          +--------+--------+-------+
-                           |
-                           v
-                    +-------------+
-                    |   Memory    |
-                    |  SQLModel   |
-                    | PostgreSQL/ |
-                    |   SQLite    |
-                    +-------------+
+
+<p align="center">
+  <img src="./architecture.png" alt="AI Advance COO Agent" width="100%">
+</p>
 ```
 
 ------------------------------------------------------------------------
